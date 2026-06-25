@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Star Media - Home</title>
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header">
+    <img class="logo" src="images/logo.png" alt="Three Star Media logo" width="80" height="80">
+
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <form class="search-form" action="#" method="get">
+      <label for="site-search" class="visually-hidden">Search</label>
+      <input type="search" id="site-search" name="search" placeholder="Search">
+      <button type="submit" aria-label="Search">&#128269;</button>
+    </form>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO BANNER ===================== -->
+    <section class="hero-banner">
+      <img class="hero-image" src="images/main-banner.jpg" alt="Three Star Media open office space">
+      <div class="hero-text">
+        <h1>Welcome to Three Star Media</h1>
+        <p>Three Star Media helps businesses grow by combining strategy, design, and technology to create digital experiences that stand out and deliver results.</p>
+        <a class="btn btn-primary" href="#contact">Connect with us &#9656;</a>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT US ===================== -->
+    <section class="about-us" id="about">
+      <img class="about-image" src="images/about-us.jpg" alt="Office lounge area with ping pong table">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>We are a full-service digital agency based in Ottawa, dedicated to helping brands build a strong online presence through thoughtful design and smart development.</p>
+        <p>Our team blends creativity with data-driven insight, delivering websites, campaigns, and content that connect with your audience and support your business goals</p>
+      </div>
+    </section>
+
+    <!-- ===================== OUR SERVICES ===================== -->
+    <section class="our-services" id="services">
+      <h2>Our Services</h2>
+
+      <!-- Two large featured services -->
+      <div class="service-grid-large">
+        <article class="service-card service-card-large">
+          <img src="images/digital.jpg" alt="Person using laptop and phone for digital work">
+          <h3>Digital Transformation</h3>
+          <p>We partner with organizations to modernize their digital tools and workflows, improving customer experiences and making everyday operations more efficient.</p>
+          <a class="btn btn-dark" href="#contact">Digital Plans &#9656;</a>
+        </article>
+
+        <article class="service-card service-card-large">
+          <img src="images/marketing.jpg" alt="Laptop showing marketing analytics dashboard">
+          <h3>Marketing</h3>
+          <p>From social media to email campaigns, we craft targeted marketing strategies that increase visibility, drive traffic, and turn visitors into loyal customers.</p>
+          <a class="btn btn-dark" href="#contact">Marketing Plans &#9656;</a>
+        </article>
+      </div>
+
+      <!-- Three smaller services -->
+      <div class="service-grid-small">
+        <article class="service-card service-card-small">
+          <img src="images/video.jpg" alt="Hand holding phone showing video app">
+          <h3>Video Production</h3>
+          <p>We create compelling video content that tells your story and engages your audience across various platforms.</p>
+          <a class="btn btn-dark" href="#contact">Video Plans &#9656;</a>
+        </article>
+
+        <article class="service-card service-card-small">
+          <img src="images/web.jpg" alt="Notebook and phone showing a website login screen">
+          <h3>Web Development</h3>
+          <p>We design and build responsive, accessible websites that look great on any device and are easy for your team to update and maintain.</p>
+          <a class="btn btn-dark" href="#contact">Web Plans &#9656;</a>
+        </article>
+
+        <article class="service-card service-card-small">
+          <img src="images/print.jpg" alt="Row of newspaper vending boxes on a street">
+          <h3>Print</h3>
+          <p>We produce high-quality print materials that make a lasting impression and support your brand's message across various channels.</p>
+          <a class="btn btn-dark" href="#contact">Print Plans &#9656;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== OUR VISION ===================== -->
+    <section class="our-vision">
+      <img class="vision-image" src="images/vision.jpg" alt="Paper boats symbolizing vision and direction">
+      <div class="vision-text">
+        <h2>Our Vision</h2>
+        <p>Three Star Media is committed to helping businesses thrive in the digital age by providing innovative solutions that drive growth and create lasting value.</p>
+        <a class="btn btn-outline" href="#about">Learn More &#9656;</a>
+      </div>
+    </section>
+
+    <!-- ===================== OUR TEAM ===================== -->
+    <section class="our-team" id="team">
+      <h2>Our Team</h2>
+
+      <article class="team-member">
+        <img src="images/john.jpg" alt="Portrait of John Doe">
+        <div class="team-bio">
+          <h3>John Doe</h3>
+          <h4>CEO and Co-owner</h4>
+          <p>John is the visionary leader of Three Star Media, with over 15 years of experience in the digital marketing industry. He is passionate about helping businesses achieve their goals through innovative solutions.</p>
+        </div>
+      </article>
+
+      <article class="team-member team-member-reverse">
+        <div class="team-bio">
+          <h3>Bob Rite</h3>
+          <h4>CFO and Co-owner</h4>
+          <p>Bob brings his financial expertise to Three Star Media, ensuring that our operations are efficient and sustainable. His background in accounting and finance helps us make informed decisions for long-term success.</p>
+        </div>
+        <img src="images/bob.jpg" alt="Portrait of Bob Rite">
+      </article>
+    </section>
+
+    <!-- ===================== CONTACT US ===================== -->
+    <section class="contact-us" id="contact">
+      <h2>Contact Us</h2>
+
+      <div class="contact-grid">
+        <form class="contact-form" action="#" method="post">
+          <h3>Send us a message</h3>
+
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button type="submit" class="btn btn-dark">Send</button>
+        </form>
+
+        <div class="contact-map">
+          <h3>Location</h3>
+          <iframe
+            title="Map showing Algonquin College location"
+            src="https://www.google.com/maps?q=Algonquin+College,+1385+Woodroffe+Ave,+Nepean,+ON+K2G+3G7&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Hours of operation table -->
+      <div class="hours-of-operation">
+        <h3>Hours of operation</h3>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Days</th>
+              <th scope="col">Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday - Friday</td>
+              <td>9 AM - 6 PM</td>
+            </tr>
+            <tr>
+              <td>Saturday - Sunday</td>
+              <td>Closed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>&copy; Copyright Three Star Media, 2020</p>
+    <p>All images are taken from <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
+  </footer>
+
+</body>
+</html>
