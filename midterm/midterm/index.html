@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lone Starfish</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <!-- Header uses wide starfish image as background with title overlaid -->
+  <header class="site-header">
+    <img src="images/lone-starfish-wide.jpg" alt="Lone starfish on sandy ocean floor">
+    <h1 class="site-title">Ocean Life</h1>
+  </header>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main class="main-content" id="home">
+
+    <!-- ===================== ARTICLE ===================== -->
+    <!-- Image floats left with text wrapping around it -->
+    <article id="story">
+      <h2>Life of a Starfish</h2>
+
+      <img class="article-image" src="images/lone-starfish.jpg" alt="Close-up of a lone starfish on teal sand">
+
+      <p>Starfish, also known as sea stars, are one of the most fascinating
+        creatures in the ocean. Despite their name, they are not actually fish
+        at all. They belong to a group of marine animals called echinoderms,
+        which also includes sea urchins and sea cucumbers. There are over 2,000
+        known species of starfish found in oceans all around the world, from
+        shallow coastal waters to the deep sea floor.</p>
+    </article>
+
+    <!-- ===================== FACTS SECTION ===================== -->
+    <!-- Facts listed using unordered list as per mockup -->
+    <section class="facts" id="facts">
+      <h2>Facts About Starfish</h2>
+      <ul>
+        <li>Starfish are not actually fish — they are echinoderms, more closely related to sea urchins.</li>
+        <li>Starfish can regenerate lost arms and even entire bodies from a single arm.</li>
+        <li>Starfish have no brain or blood; they rely on a water vascular system for movement and feeding.</li>
+        <li>There are over 2,000 known species of starfish found in oceans around the world.</li>
+      </ul>
+    </section>
+
+    <!-- ===================== CONTACT FORM ===================== -->
+    <!-- All inputs linked to labels via matching for/id attributes -->
+    <section class="contact-section" id="contact">
+      <h2>Contact to learn more</h2>
+
+      <form class="contact-form" action="#" method="post">
+
+        <!-- Name field -->
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Email field -->
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Message field -->
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- Radio buttons - visit question -->
+        <fieldset>
+          <legend>What is your favourite ocean animal?</legend>
+          <label><input type="radio" name="ocean-animal" value="starfish"> Starfish</label>
+          <label><input type="radio" name="ocean-animal" value="shark"> Shark</label>
+          <label><input type="radio" name="ocean-animal" value="dolphin"> Dolphin</label>
+        </fieldset>
+
+        <button type="submit">Send</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <p>&copy; Tumusiime Alvin Kamukama.</p>
+  </footer>
+
+</body>
+</html>

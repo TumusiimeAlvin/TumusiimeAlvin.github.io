@@ -1,0 +1,298 @@
+/* =============================================
+   Ocean Life - The Starfish
+   Midterm CSS
+   Primary colour: #1a4a6b (deep ocean blue)
+   Accent colour: #e07b5a (coral orange)
+   ============================================= */
+
+/* ------------------------------------------
+   UNIVERSAL RESET
+   ------------------------------------------ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ------------------------------------------
+   BASE / BODY
+   Deep ocean blue background to set the
+   underwater tone of the site
+   ------------------------------------------ */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #1a4a6b;
+  color: #222;
+}
+
+/* ------------------------------------------
+   HEADER
+   Banner image fills the header area.
+   Title is positioned on top using
+   absolute positioning inside relative header.
+   ------------------------------------------ */
+
+.site-header {
+  position: relative;
+  width: 100%;
+  max-height: 220px;
+  overflow: hidden;
+}
+
+.site-header img {
+  width: 100%;
+  display: block;
+  max-height: 220px;
+  object-fit: cover;
+}
+
+/* Title sits on top of the header image */
+.site-title {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  white-space: nowrap;
+}
+
+/* ------------------------------------------
+   NAVIGATION
+   Dark nav bar with coral orange accents
+   ------------------------------------------ */
+
+.main-nav {
+  background-color: #0f2d42;
+  border-top: 2px solid #e07b5a;
+  border-bottom: 2px solid #e07b5a;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav ul li {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #e07b5a;
+}
+
+.main-nav ul li:last-child {
+  border-right: none;
+}
+
+.main-nav ul li a {
+  display: block;
+  padding: 13px 0;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.main-nav ul li a:hover {
+  background-color: #e07b5a;
+  color: #fff;
+}
+
+/* ------------------------------------------
+   MAIN CONTENT WRAPPER
+   Light content area centered on the dark page
+   ------------------------------------------ */
+
+.main-content {
+  max-width: 660px;
+  margin: 0 auto;
+  background-color: #eef5f8;
+  padding: 28px 36px;
+}
+
+/* ------------------------------------------
+   ARTICLE
+   Image floats left with text wrapping around it.
+   Clearfix applied so container wraps the float.
+   ------------------------------------------ */
+
+article h2 {
+  margin-top: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1a4a6b;
+  border-bottom: 2px solid #e07b5a;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+/* Article image floats left - text wraps around it */
+.article-image {
+  float: left;
+  width: 170px;
+  margin: 0 18px 12px 0;
+  display: block;
+  border: 3px solid #e07b5a;
+}
+
+/* Clearfix so the article container wraps the floated image */
+article::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+article p {
+  margin-top: 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ------------------------------------------
+   FACTS SECTION
+   Four facts in an unordered list
+   ------------------------------------------ */
+
+.facts {
+  margin-top: 28px;
+}
+
+.facts h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1a4a6b;
+  border-bottom: 2px solid #e07b5a;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.facts ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.facts ul li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* ------------------------------------------
+   CONTACT FORM SECTION
+   ------------------------------------------ */
+
+.contact-section {
+  margin-top: 28px;
+}
+
+.contact-section h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #1a4a6b;
+  border-bottom: 2px solid #e07b5a;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+/* Form container with coral border */
+.contact-form {
+  border: 1px solid #e07b5a;
+  padding: 22px;
+  background-color: #eef5f8;
+}
+
+/* Labels sit above inputs */
+.contact-form label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Text inputs and textarea fill the full form width */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 16px;
+  border: 1px solid #b0c8d4;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* Fieldset for radio button group */
+.contact-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.contact-form fieldset legend {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+/* Radio labels display inline */
+.contact-form fieldset label {
+  display: inline;
+  font-weight: normal;
+  margin-right: 16px;
+  font-size: 0.9rem;
+}
+
+/* Submit button */
+.contact-form button[type="submit"] {
+  padding: 7px 22px;
+  background-color: #1a4a6b;
+  color: #ffffff;
+  border: 2px solid #1a4a6b;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #e07b5a;
+  border-color: #e07b5a;
+}
+
+/* ------------------------------------------
+   FOOTER
+   Dark footer with coral accent text
+   ------------------------------------------ */
+
+.site-footer {
+  max-width: 660px;
+  margin: 0 auto;
+  background-color: #0f2d42;
+  text-align: right;
+  padding: 10px 36px;
+  font-size: 0.85rem;
+  color: #e07b5a;
+  border-top: 2px solid #e07b5a;
+}
